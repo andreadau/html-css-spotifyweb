@@ -62,8 +62,8 @@
 .mr-auto {
   margin-left: auto !important;
 }
-.m-25 {
-  margin: 25px !important;
+.m-15 {
+  margin: 15px !important;
 }
 .bg-white {
   background: white !important;
@@ -120,7 +120,7 @@ aside.main-menu {
     width: 200px;
     height: 200px;
     background-color: red;
-    justify-content: space-between;
+    display: flex;
 }
 
 
