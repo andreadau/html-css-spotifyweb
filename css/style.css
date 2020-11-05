@@ -83,6 +83,7 @@ body {
   background-color: #333;
   color: white;
   font-family: gotham, sans-serif;
+  font-weight: bold;
 }
 .wrapper {
   height: 100vh;
@@ -113,7 +114,13 @@ aside.main-menu {
   width: calc(100% - 300px);
   height: 60px;
   background-color: #8a2be2a1;
-
+  z-index: 100;
+}
+.p-over {
+  margin-top: 5px;
+  font-size: 15px;
+  color: gray;
+  font-weight: bold;
 }
 /* Covers section */
 .item {
@@ -121,27 +128,40 @@ aside.main-menu {
   position: relative;
   flex-direction: column;
 }
-#recently-played img {
+.d-flex.flex-wrap img {
   width: 200px;
   height: 90%;
 }
-#recently-played h1 {
+.d-flex.flex-wrap h1 {
   width: 200px;
   font-size: 20px;
 }
-#recently-played p {
+.d-flex.flex-wrap p {
  text-align: center;
  margin-top: 10px;
  font: 15px;
  color: gray;
 }
+/* /Covers section */
+#popular img {
+  border-radius: 50%;
+}
+#created-for h1 {
+  width: 200px;
+  font-size: 20px;
+}
+#created-for p {
+ text-align: center;
+ margin-top: 10px;
+ font: 15px;
+ color: gray;
+}
+/* Covers section */
+/* Covers section */
 
 /* Footer */
 footer#site-footer {
     background-color: yellowgreen;
     height: 60px;
-    /* position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%; */
+    z-index: 101
 }
