@@ -95,8 +95,9 @@ body {
   height: calc(100% - 60px);
 }
 aside.main-menu {
-  min-width: 10%;
+  min-width: 15%;
   background-color: black;
+  z-index: 101;
 }
 
 .covers-section {
@@ -105,14 +106,14 @@ aside.main-menu {
   overflow-y: auto;
   overflow-x: hidden;
   padding-top: 60px;
-  width: calc(100% - 10%);
+  width: calc(100% - 15%);
 }
 .subscribe-banner {
   position: fixed;
   top: 0;
   right: 0;
-  width: calc(100% - 10%);
-  height: 60px;
+  width: calc(100% - 15%);
+  height: 100px;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 100;
 }
@@ -122,6 +123,16 @@ aside.main-menu {
   color: gray;
   font-weight: bold;
 }
+/* sidebar */
+.logo {
+  max-width: 170px;
+  margin: 20px 10px 10px 10px;
+}
+
+
+
+/* /sidebar */
+
 /* subscribe */
 .btn-top {
   border: 1px solid white;
@@ -130,13 +141,15 @@ aside.main-menu {
   padding: 10px 10px;
   position: absolute;
   right: 20px;
-  top: 20%;
+  top: 30%;
 }
 .btn-top a {
   text-decoration: none;
   color: white;
 }
-
+.btn-top:hover {
+background-color: yellowgreen;
+}
 /* /subscribe */
 
 /* Nav-top */
@@ -145,10 +158,9 @@ aside.main-menu {
   color: gray;
   font-size: 15px;
 }
-#nav a:hover:after {
-  color: green;
+#nav a:hover {
   width: 30px;
-  border-bottom:1px solid green;
+  border-bottom:1px solid yellowgreen;
 }
 /* /Nav-top */
 

@@ -9,17 +9,26 @@
   <title>html-css-spotifyweb</title>
 </head>
 <body>
-      <div class="wrapper d-flex">
-          <main id="site-content" class="d-flex">
-      <aside class="main-menu">Sidebar</aside>
-      <section class="covers-section">
+  <div class="wrapper d-flex">
+    <main id="site-content" class="d-flex">
+      <!-- Sidebar -->
+      <aside class="main-menu">
+        <div class="logo">
+          <img src="img/logo.svg" alt="">
+        </div>
+      </aside>
+      <!-- Sidebar -->
+
+        <section class="covers-section">
+        <!-- Sub Banner -->
           <div class="subscribe-banner">
             <div class="btn-top text-center">
               <a href="#">EFFETTUA L'UPGRADE</a>
             </div>
           </div>
-
-          <nav id="nav" class="uppercase text-center mt-25">
+          <!-- Sub Banner -->
+        <!-- NavBar top -->
+          <nav id="nav" class="uppercase text-center mt-50">
                 <a href="#">in evidenza</a>
                 <a href="#">podcast</a>
                 <a href="#">classifiche</a>
@@ -27,8 +36,9 @@
                 <a href="#">nuove uscite</a>
                 <a href="#">scopri</a>
           </nav>
+        <!-- NavBar top -->
       <!-- recently-played -->
-         <h2 class="mt-25">Recently played</h2>
+          <h2 class="mt-25">Recently played</h2>
           <div id="recently-played" class="d-flex flex-wrap mt-25">
             <div class="item m-15">
               <div class="item-img">
@@ -108,6 +118,7 @@
             </div>
           </div>
         <!-- /created-for -->
+        <!-- popular -->
           <h2 class="mt-50">Artisti più popolari</h2>
           <p class="p-over mb-25">Più ascolti, più accurati saranno i suggerimenti.</p>
           <div id="popular" class="d-flex flex-wrap">
@@ -128,14 +139,15 @@
               </div>
             </div>
           </div>
+          <!-- /popular -->
 
+        </section>
+      </main>
 
-      </section>
-          </main>
-          <footer id="site-footer">
-              <div class="player">player</div>
-          </footer>
-      </div>
+      <footer id="site-footer">
+        <div class="player">player</div>
+      </footer>
+  </div>
 
 
 </body>
