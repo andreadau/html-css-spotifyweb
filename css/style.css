@@ -95,7 +95,7 @@ body {
   height: calc(100% - 60px);
 }
 aside.main-menu {
-  min-width: 300px;
+  min-width: 10%;
   background-color: black;
 }
 
@@ -105,15 +105,15 @@ aside.main-menu {
   overflow-y: auto;
   overflow-x: hidden;
   padding-top: 60px;
-  width: calc(100% - 300px);
+  width: calc(100% - 10%);
 }
 .subscribe-banner {
   position: fixed;
   top: 0;
   right: 0;
-  width: calc(100% - 300px);
+  width: calc(100% - 10%);
   height: 60px;
-  background-color: #8a2be2a1;
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 100;
 }
 .p-over {
@@ -122,6 +122,36 @@ aside.main-menu {
   color: gray;
   font-weight: bold;
 }
+/* subscribe */
+.btn-top {
+  border: 1px solid white;
+  width: 300px;
+  border-radius: 20px;
+  padding: 10px 10px;
+  position: absolute;
+  right: 20px;
+  top: 20%;
+}
+.btn-top a {
+  text-decoration: none;
+  color: white;
+}
+
+/* /subscribe */
+
+/* Nav-top */
+#nav a {
+  text-decoration:none;
+  color: gray;
+  font-size: 15px;
+}
+#nav a:hover:after {
+  color: green;
+  width: 30px;
+  border-bottom:1px solid green;
+}
+/* /Nav-top */
+
 /* Covers section */
 .item {
   display: flex;
