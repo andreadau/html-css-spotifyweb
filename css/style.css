@@ -98,6 +98,7 @@ aside.main-menu {
   min-width: 15%;
   background-color: black;
   z-index: 101;
+  position: relative;
 }
 
 .covers-section {
@@ -128,9 +129,111 @@ aside.main-menu {
   max-width: 170px;
   margin: 20px 10px 10px 10px;
 }
-
-
-
+.logo-small {
+  max-width: 50px;
+  margin: 20px 10px 10px 10px;
+  display: none;
+}
+.home {
+  position: relative;
+}
+.home img {
+  max-width: 50px;
+  margin: 20px 10px 10px 10px;
+}
+.home span {
+  position: absolute;
+  top: 50%;
+  color: white;
+}
+.search {
+  position: relative;
+}
+.search img {
+  max-width: 50px;
+  margin: 20px 10px 10px 10px;
+}
+.search span {
+  position: absolute;
+  top: 50%;
+  color: gray;
+}
+.libreria {
+  position: relative;
+}
+.libreria img {
+  max-width: 50px;
+  margin: 20px 10px 10px 10px;
+}
+.libreria span {
+  position: absolute;
+  top: 50%;
+  color: gray;
+}
+.playlist {
+  margin: 20px 10px 10px 10px;
+}
+.crea-playlist {
+  position: relative;
+}
+.crea-playlist i {
+  color: gray;
+  font-size: 3em;
+  margin-top: 10px;
+}
+.crea-playlist span {
+  position: absolute;
+  top: 50%;
+  margin-left: 20px;
+  color: gray;
+}
+.list-playlist p {
+  color: gray;
+  margin-top: 15px;
+}
+.list-playlist a {
+  text-decoration: none;
+}
+.bot-side {
+  margin: 20px 10px 10px 10px;
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  overflow-y: hidden;
+}
+.bot-side img {
+  max-width: 25px;
+}
+.installa {
+  position: relative;
+  border-bottom: 1px solid gray;
+  width: 90%;
+  margin-bottom: 10px;
+}
+.installa span {
+  position: absolute;
+  bottom: 20%;
+  margin-left: 20px;
+  color: gray;
+}
+.profile-side {
+  position: relative;
+}
+.profile-side span {
+  position: absolute;
+  top: 20%;
+  margin-left: 20px;
+  color: white;
+}
+.home img:hover {
+  border-left: 2px solid yellowgreen;
+}
+.search img:hover {
+  border-left: 2px solid yellowgreen;
+}
+.libreria img:hover {
+  border-left: 2px solid yellowgreen;
+}
 /* /sidebar */
 
 /* subscribe */
@@ -206,4 +309,34 @@ footer#site-footer {
     background-color: yellowgreen;
     height: 60px;
     z-index: 101
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    display: none;
+  }
+  .logo-small {
+    display: block;
+  }
+  span {
+    display: none;
+  }
+  h1 {
+    display: none;
+  }
+  p {
+    display: none;
+  }
+  .btn-top {
+    padding: 5px 5px;
+    width: 250px;
+  }
+  .installa {
+    border-bottom: 1px solid black;
+  }
+}
+@media screen and (max-width: 768px) {
+  aside {
+    font-size: 10px;
+  }
 }
