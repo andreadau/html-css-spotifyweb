@@ -95,10 +95,10 @@ body {
 }
 
 #site-content{
-  height: calc(100% - 80px);
+  max-height: calc(100% - 80px);
 }
 aside.main-menu {
-  min-width: 15%;
+  width: 300px;
   background-color: black;
   z-index: 101;
   position: relative;
@@ -112,13 +112,13 @@ aside.main-menu {
   overflow-y: auto;
   overflow-x: hidden;
   padding-top: 60px;
-  width: calc(100% - 15%);
+  width: calc(100% - 300px);
 }
 .subscribe-banner {
   position: fixed;
   top: 0;
   right: 0;
-  width: calc(100% - 15%);
+  width: calc(100% - 300px);
   height: 100px;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 100;
@@ -139,11 +139,15 @@ aside.main-menu {
   margin: 20px 10px 10px 10px;
   display: none;
 }
+.center-sidebar {
+  background: black;
+  z-index: 101;
+}
 .home {
   position: relative;
 }
 .home img {
-  max-width: 50px;
+  max-width: 30px;
   margin: 20px 10px 10px 10px;
 }
 .home span {
@@ -155,7 +159,7 @@ aside.main-menu {
   position: relative;
 }
 .search img {
-  max-width: 50px;
+  max-width: 30px;
   margin: 20px 10px 10px 10px;
 }
 .search span {
@@ -167,7 +171,7 @@ aside.main-menu {
   position: relative;
 }
 .libreria img {
-  max-width: 50px;
+  max-width: 30px;
   margin: 20px 10px 10px 10px;
 }
 .libreria span {
@@ -177,6 +181,8 @@ aside.main-menu {
 }
 .playlist {
   margin: 20px 10px 10px 10px;
+  background: black;
+  z-index: 101;
 }
 .crea-playlist {
   position: relative;
@@ -192,6 +198,8 @@ aside.main-menu {
   margin-left: 20px;
   color: gray;
 }
+.list-playlist {
+}
 .list-playlist p {
   color: gray;
   margin-top: 15px;
@@ -204,6 +212,7 @@ aside.main-menu {
   position: absolute;
   bottom: 0;
   width: 90%;
+  overflow-y: hidden;
 }
 .bot-side img {
   max-width: 25px;
@@ -360,11 +369,8 @@ aside.main-menu {
 /* Footer */
 footer#site-footer {
     background-color: #282828;
-    flex-direction: row;
     z-index: 102;
     height: 80px;
-    flex-wrap: nowrap;
-    display: flex;
 }
 .now-playing {
   display: flex;
@@ -395,13 +401,25 @@ footer#site-footer {
   color: gray;
   text-align: right;
 }
+@media screen and (max-width:1024px){
+  aside.main-menu {
+    width: 200px;
+  }
+  .covers-section {
+    width: calc(100% - 200px);
+  }
+  .subscribe-banner {
+    width: calc(100% - 200px);
+  }
+}
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 766px) {
   .logo {
     display: none;
   }
   .logo-small {
     display: block;
+    max-width: 30px;
   }
   aside span {
     display: none;
@@ -419,9 +437,18 @@ footer#site-footer {
   .installa {
     border-bottom: 1px solid black;
   }
-}
-@media screen and (max-width: 768px) {
-  aside h1, p{
-    font-size: 10px;
+  aside.main-menu {
+    width: 50px;
+  }
+  .crea-playlist i {
+    color: gray;
+    font-size: 2em;
+    margin-top: 10px;
+  }
+  .covers-section {
+    width: calc(100% - 50px);
+  }
+  .subscribe-banner {
+    width: calc(100% - 50px);
   }
 }
