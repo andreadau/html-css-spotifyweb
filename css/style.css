@@ -80,6 +80,10 @@
 .uppercase {
   text-transform: uppercase;
 }
+.fsw-2 {
+  font-size: 2.3em !important;
+  color: white !important;
+}
 /* Utility classes */
 
 body {
@@ -153,7 +157,7 @@ aside.main-menu {
 .home span {
   position: absolute;
   top: 50%;
-  color: white;
+  color: gray;
 }
 .search {
   position: relative;
@@ -252,15 +256,37 @@ aside.main-menu {
   margin-left: 20px;
   color: white;
 }
-.home img:hover {
+/* HOVER */
+.home:hover span {
+  color: white;
+}
+.search:hover span {
+  color: white;
+}
+.libreria:hover span{
+  color: white;
+}
+.playlist span:hover {
+  color: white;
+}
+.playlist p:hover {
+  color: white;
+}
+.home:hover {
+  border-left: 2px solid yellowgreen;
+  height: 40%;
+}
+.search:hover {
   border-left: 2px solid yellowgreen;
 }
-.search img:hover {
+.libreria:hover {
   border-left: 2px solid yellowgreen;
 }
-.libreria img:hover {
-  border-left: 2px solid yellowgreen;
+.installa:hover span {
+  color: white;
 }
+/* /HOVER */
+
 /* /sidebar */
 
 /* subscribe */
@@ -280,6 +306,20 @@ aside.main-menu {
 .btn-top:hover {
   background-color: yellowgreen;
 }
+/* btn animation */
+.btn-top:hover {
+  animation: scalegrow ease-in-out 0.8s;
+}
+@keyframes scalegrow {
+from {
+  transform: scale(1);
+}
+to {
+  transform: scale(1.1);
+}
+}
+/* btn animation */
+
 /* /subscribe */
 
 /* Nav-top */
@@ -287,10 +327,11 @@ aside.main-menu {
   text-decoration:none;
   color: gray;
   font-size: 15px;
+  margin: 20px 15px;
 }
 #nav a:hover {
   width: 30px;
-  border-bottom:1px solid yellowgreen;
+  border-bottom:3px solid yellowgreen;
 }
 /* /Nav-top */
 
@@ -396,12 +437,15 @@ aside.main-menu {
   font-size: 13px;
 }
 .playing-icon {
-  padding: 20px 40px 20px 0;
+  padding: 20px 20px 20px 0;
 }
 .playing-icon i {
   padding-left: 10px;
   color: gray;
   text-align: right;
+}
+.playing-icon i:hover {
+    color: white;
 }
 /* /Left Nab Bot */
 /* Center Nab Bot */
@@ -418,6 +462,10 @@ aside.main-menu {
     font-size: 1.5em;
     margin: 0 10px 10px 20px;
     color: gray;
+    cursor: pointer;
+}
+.player-control i:hover {
+    color: white;
 }
 .song-timer {
     flex-flow: row;
@@ -446,6 +494,10 @@ aside.main-menu {
   margin: 0 10px 0 10px;
   font-size: 1rem;
   color: gray;
+  cursor: pointer;
+}
+.nav-bot-right i:hover {
+    color: white;
 }
 .volume-bar {
   width: 100%;
@@ -460,6 +512,8 @@ aside.main-menu {
   height: 5px;
   border-radius: 10px;
 }
+
+
 /* Right Nab Bot */
 
 /* **************** */
@@ -522,10 +576,40 @@ aside.main-menu {
     width: calc(100% - 50px);
   }
   .nav-bot-left img {
-    height: 30px;
+    height: 40px;
     margin-top: 10px;
     margin-left: 10px;
     align-self: flex-end;
   }
+  .player-control i {
+    font-size: 1em;
+    margin: 0 10px 10px 20px;
+    color: gray;
+  }
+  .nav-bot-right i {
+    margin: 0 10px 0 10px;
+    font-size: 0.7rem;
+    color: gray;
+  }
+  .nav-bot-left {
+    font-size: 10px;
+  }
+  .brano {
+    font-size: 10px;
+    display: inline;
+  }
+  .playing-title {
+    margin-left: 4px;
+  }
 }
 /* /Media Query Smartphone */
+
+/* /Media Query Smartphone small */
+@media screen and (max-width: 480px) {
+  .player-control i {
+    font-size: 1em;
+    margin: 0 10px 10px 7px;
+    color: gray;
+  }
+}
+/* /Media Query Smartphone small */
