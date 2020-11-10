@@ -367,17 +367,23 @@ aside.main-menu {
 /* Covers section */
 
 /* Footer */
-footer#site-footer {
+#site-footer {
     background-color: #282828;
     z-index: 102;
     height: 80px;
 }
-.now-playing {
-  display: flex;
-  justify-content: flex-start;
+.player {
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
-.now-playing img {
-  width: 60px;
+/* Left Nab Bot */
+.nav-bot-left {
+  justify-content: space-between;
+  width: 270px;
+}
+.nav-bot-left img {
+  height: 60px;
   margin-top: 10px;
   margin-left: 10px;
   align-self: flex-end;
@@ -385,22 +391,81 @@ footer#site-footer {
 .playing-title {
   margin-top: 25px;
   line-height: 20px;
-  margin-left: 25px;
-
 }
 .brano{
   color: gray;
-  font-size: 10px;
-
+  font-size: 13px;
 }
 .playing-icon {
-  padding: 30px 40px 20px 70px;
+  padding: 30px 40px 20px 0;
 }
 .playing-icon i {
   padding-left: 10px;
   color: gray;
   text-align: right;
 }
+/* /Left Nab Bot */
+/* Center Nab Bot */
+.nav-bot-center {
+  flex-flow: column;
+  width: 40%;
+  justify-content: space-around;
+}
+.player-control {
+  justify-content: center;
+  align-items: center;
+}
+.player-control i {
+    font-size: 1.5em;
+    margin: 0 10px 10px 20px;
+    color: gray;
+}
+.song-timer {
+    flex-flow: row;
+    align-items: center;
+}
+.song-bar {
+  width: 100%;
+  background-color: gray;
+  height: 5px;
+  border-radius: 10px;
+  margin: 0 10px 0 ;
+}
+}
+/* /Center Nab Bot */
+/* Right Nab Bot */
+.nav-bot-right {
+  width: 270px;
+  align-items: center;
+}
+.nav-bot-right i {
+  margin: 0 10px 0 10px;
+  font-size: 1rem;
+  color: #a3a3a3;
+}
+.volume-bar {
+  width: 100%;
+  background-color: gray;
+  height: 5px;
+  margin: 0 10px 0 5px;
+  border-radius: 10px;
+}
+.volume-bar-control {
+  width: 30%;
+  background-color: lightgray;
+  height: 5px;
+  border-radius: 10px;
+}
+/* Right Nab Bot */
+
+/* **************** */
+/* **************** */
+/* **************** */
+/* **************** */
+/* **************** */
+/* **************** */
+
+/* Media Query Tablet */
 @media screen and (max-width:1024px){
   aside.main-menu {
     width: 200px;
@@ -412,7 +477,8 @@ footer#site-footer {
     width: calc(100% - 200px);
   }
 }
-
+/* /Media Query Tablet */
+/* Media Query Smartphone */
 @media screen and (max-width: 766px) {
   .logo {
     display: none;
@@ -451,4 +517,11 @@ footer#site-footer {
   .subscribe-banner {
     width: calc(100% - 50px);
   }
+  .nav-bot-left img {
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+    align-self: flex-end;
+  }
 }
+/* /Media Query Smartphone */
