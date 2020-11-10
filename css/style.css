@@ -95,7 +95,7 @@ body {
 }
 
 #site-content{
-  max-height: calc(100% - 80px);
+  max-height: calc(100% - 100px);
 }
 aside.main-menu {
   width: 300px;
@@ -370,7 +370,7 @@ aside.main-menu {
 #site-footer {
     background-color: #282828;
     z-index: 102;
-    height: 80px;
+    height: 100px;
 }
 .player {
   justify-content: space-between;
@@ -384,12 +384,11 @@ aside.main-menu {
 }
 .nav-bot-left img {
   height: 60px;
-  margin-top: 10px;
   margin-left: 10px;
   align-self: flex-end;
 }
 .playing-title {
-  margin-top: 25px;
+  margin-top: 15px;
   line-height: 20px;
 }
 .brano{
@@ -397,7 +396,7 @@ aside.main-menu {
   font-size: 13px;
 }
 .playing-icon {
-  padding: 30px 40px 20px 0;
+  padding: 20px 40px 20px 0;
 }
 .playing-icon i {
   padding-left: 10px;
@@ -431,6 +430,11 @@ aside.main-menu {
   border-radius: 10px;
   margin: 0 10px 0 ;
 }
+.song-bar-control {
+  width: 7%;
+  background-color: lightgray;
+  height: 5px;
+  border-radius: 10px;
 }
 /* /Center Nab Bot */
 /* Right Nab Bot */
@@ -441,7 +445,7 @@ aside.main-menu {
 .nav-bot-right i {
   margin: 0 10px 0 10px;
   font-size: 1rem;
-  color: #a3a3a3;
+  color: gray;
 }
 .volume-bar {
   width: 100%;
