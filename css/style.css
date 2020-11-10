@@ -74,6 +74,9 @@
 .text-right {
   text-align: right;
 }
+.d-block {
+  display: block;
+}
 .uppercase {
   text-transform: uppercase;
 }
@@ -92,13 +95,15 @@ body {
 }
 
 #site-content{
-  height: calc(100% - 60px);
+  height: calc(100% - 80px);
 }
 aside.main-menu {
   min-width: 15%;
   background-color: black;
   z-index: 101;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .covers-section {
@@ -199,7 +204,6 @@ aside.main-menu {
   position: absolute;
   bottom: 0;
   width: 90%;
-  overflow-y: hidden;
 }
 .bot-side img {
   max-width: 25px;
@@ -210,18 +214,32 @@ aside.main-menu {
   width: 90%;
   margin-bottom: 10px;
 }
+.installa i {
+  font-size: 1em;
+  margin-bottom: 10px;
+  margin-left: 3px;
+  color: gray;
+}
+.installa a {
+  text-decoration: none;
+}
 .installa span {
-  position: absolute;
-  bottom: 20%;
   margin-left: 20px;
   color: gray;
+
 }
 .profile-side {
   position: relative;
 }
+.profile-side i {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: white;
+}
+.profile-side a {
+  text-decoration: none;
+}
 .profile-side span {
-  position: absolute;
-  top: 20%;
   margin-left: 20px;
   color: white;
 }
@@ -251,7 +269,7 @@ aside.main-menu {
   color: white;
 }
 .btn-top:hover {
-background-color: yellowgreen;
+  background-color: yellowgreen;
 }
 /* /subscribe */
 
@@ -341,12 +359,44 @@ background-color: yellowgreen;
 
 /* Footer */
 footer#site-footer {
-    background-color: yellowgreen;
-    height: 60px;
-    z-index: 101
+    background-color: #282828;
+    flex-direction: row;
+    z-index: 102;
+    height: 80px;
+    flex-wrap: nowrap;
+    display: flex;
+}
+.now-playing {
+  display: flex;
+  justify-content: flex-start;
+}
+.now-playing img {
+  width: 60px;
+  margin-top: 10px;
+  margin-left: 10px;
+  align-self: flex-end;
+}
+.playing-title {
+  margin-top: 25px;
+  line-height: 20px;
+  margin-left: 25px;
+
+}
+.brano{
+  color: gray;
+  font-size: 10px;
+
+}
+.playing-icon {
+  padding: 30px 40px 20px 70px;
+}
+.playing-icon i {
+  padding-left: 10px;
+  color: gray;
+  text-align: right;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .logo {
     display: none;
   }
@@ -371,7 +421,7 @@ footer#site-footer {
   }
 }
 @media screen and (max-width: 768px) {
-  aside {
+  aside h1, p{
     font-size: 10px;
   }
 }

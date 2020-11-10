@@ -10,8 +10,9 @@
   <title>html-css-spotifyweb</title>
 </head>
 <body>
-  <div class="wrapper d-flex">
-    <main id="site-content" class="d-flex">
+<div class="wrapper d-flex">
+  <!-- Main -->
+  <main id="site-content" class="d-flex">
       <!-- Sidebar -->
       <aside class="main-menu">
         <div class="logo">
@@ -64,13 +65,13 @@
         <div class="bot-side">
           <div class="installa">
             <a href="#">
-              <img src="img/download.svg" alt="">
+              <i class="fas fa-arrow-circle-down"></i>
               <span>Installa app</span>
             </a>
           </div>
           <div class="profile-side">
             <a href="#">
-              <img src="img/profile.svg" alt="">
+              <i class="fas fa-user-circle"></i>
               <span>John Doe</span>
             </a>
           </div>
@@ -78,7 +79,7 @@
       </aside>
       <!-- Sidebar -->
 
-        <section class="covers-section">
+    <section class="covers-section">
         <!-- Sub Banner -->
           <div class="subscribe-banner">
             <div class="btn-top text-center">
@@ -250,13 +251,31 @@
           </div>
           <!-- /popular -->
 
-        </section>
-      </main>
+      </section>
+  </main>
+  <!-- /Main -->
 
       <footer id="site-footer">
-        <div class="player">player</div>
+        <div class="player">
+          <div class="now-playing">
+            <div class="playing-img">
+              <img src="img/sinister.jpeg" alt="">
+            </div>
+            <div class="playing-title">
+              <p>Sinister</p>
+              <p class="d-block brano">Brano Nome</p>
+            </div>
+            <div class="playing-icon">
+              <a href="#"><i class="far fa-heart"></i></a>
+              <a href="#"><i class="far fa-folder"></i></a>
+            </div>
+          </div>
+
+
+        </div>
+
       </footer>
-  </div>
+</div>
 
 
 </body>
